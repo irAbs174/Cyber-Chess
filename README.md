@@ -1,16 +1,14 @@
-# Cyber-Chess — The Last Key
+## The Year is **2088** …
+  ###### The Physical World Replaced With Calculation Data Power To Find The **Last** **Key** …
 
-A small, self-contained browser prototype for the Camplate chess match in 2088. The opening position reflects the latest feed: Neo_Coder's `e5`, followed by Cpt_Knockturn's `Nd3`.
+## Cyber-Chess … The Last Key
 
-## Run locally
+A small, self-contained browser prototype for the Camplate chess match in **2088**.
+The opening position reflects the latest feed;
 
-No install or build step is required. Serve this directory with any static web server, for example:
-
-```sh
+```bash
 python3 -m http.server 8000
 ```
-
-Then open `http://localhost:8000`.
 
 ## Play
 
