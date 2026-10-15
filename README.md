@@ -17,4 +17,5 @@ python3 -m http.server 8000
 - Red (Cpt_Knockturn) replies automatically. Both clocks run during the active turn.
 - **Reboot Session** resets the clocks and board.
 
-The local prototype validates standard piece movement, check, checkmate, castling, en passant, and automatic queen promotion. It has no network or multiplayer connection.
+The local prototype validates standard piece maen a Keys.
+It has no network or multiplayer connection.
