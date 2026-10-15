@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080c0d" />
+    <meta name="description" content="Cyber-Chess: the Camplate last-key protocol, year 2088." />
+    <title>Cyber-Chess // The Last Key</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Cyber-Chess home">
+          <span class="brand-mark" aria-hidden="true">♞</span>
+          <span class="brand-copy">
+            <strong>CYBER<span>//</span>CHESS</strong>
+            <small>CAMPLATE MAINFRAME <i>·</i> 2088</small>
+          </span>
+        </a>
+
+        <div class="topbar-center">
+          <span class="topbar-dash" aria-hidden="true"></span>
+          <span>WAR FOR THE LAST KEY</span>
+          <span class="topbar-dash" aria-hidden="true"></span>
+        </div>
+
+        <div class="session-status">
+          <span class="live-indicator"><i></i><b id="sessionStatus">ACTIVE</b></span>
+          <span class="status-divider" aria-hidden="true"></span>
+          <span class="game-id">GAME ID <b>#241</b></span>
+        </div>
+      </header>
+
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> CAMPLATE // LAST SCIENCE PUZZLE — PART 01</p>
+          <h1 id="page-title">The last key is<br /><em>one move away.</em></h1>
+          <p class="hero-description">The physical world is gone. Every handshake is a move.<br class="desktop-break" /> Hold the bandwidth—or get disconnected.</p>
+        </div>
+        <div class="hero-signal" aria-label="Encrypted live connection">
+          <div class="signal-orbit" aria-hidden="true">
+            <span class="orbit orbit-one"></span>
+            <span class="orbit orbit-two"></span>
+            <span class="orbit-core">2088</span>
+          </div>
+          <div class="signal-copy">
+            <span class="micro-label">SIMULATION LINK</span>
+            <strong><i></i> ENCRYPTED</strong>
+            <small>LATENCY <b>04 ms</b></small>
+          </div>
+        </div>
+        <div class="hero-binary" aria-hidden="true">101010 001101 110010<br />010101 101100 001011</div>
+      </section>
+
+      <section class="game-layout" aria-label="Live Cyber-Chess match">
+        <aside class="player-rail" aria-label="Players">
+          <article class="player-card player-red" id="redCard">
+            <div class="player-card-top">
+              <span class="team-label"><i></i> RED / INTRUSION</span>
+              <span class="player-state" id="redState">STANDBY</span>
+            </div>
+            <div class="player-identity">
+              <div class="avatar avatar-red" aria-hidden="true">CK<span>+</span></div>
+              <div class="identity-copy">
+                <h2>Cpt_Knockturn</h2>
+                <p>BLACKARCH <span>PROTOCOL</span></p>
+              </div>
+            </div>
+            <div class="clock-row">
+              <span>TIME REMAINING</span>
+              <time id="redClock" class="clock">08:32</time>
+            </div>
+            <div class="player-card-bottom">
+              <span class="knight-count"><span class="knight-icon" aria-hidden="true">♞</span> KNIGHTS <b id="redKnights">02</b></span>
+              <span class="style-tag">OFFENSE <i>↗</i></span>
+            </div>
+            <div class="player-accent" aria-hidden="true"></div>
+          </article>
+
+          <article class="protocol-card">
+            <div class="protocol-heading"><span>SESSION PARAMETERS</span><span class="protocol-icon" aria-hidden="true">⌘</span></div>
+            <div class="protocol-row"><span>PROTOCOL</span><b>CAMPLATE / 01</b></div>
+            <div class="protocol-row"><span>HANDSHAKE</span><b class="handshake-state"><i></i> VERIFIED</b></div>
+            <div class="protocol-row"><span>BOARD STATE</span><b id="moveCount">02 MOVES</b></div>
+          </article>
+
+          <article class="player-card player-green active-turn" id="greenCard">
+            <div class="player-card-top">
+              <span class="team-label"><i></i> GREEN / DEFENSE</span>
+              <span class="player-state" id="greenState">YOUR TURN</span>
+            </div>
+            <div class="player-identity">
+              <div class="avatar avatar-green" aria-hidden="true">NC<span>+</span></div>
+              <div class="identity-copy">
+                <h2>Neo_Coder</h2>
+                <p>MATRIX <span>PROTOCOL</span></p>
+              </div>
+            </div>
+            <div class="clock-row">
+              <span>TIME REMAINING</span>
+              <time id="greenClock" class="clock">07:45</time>
+            </div>
+            <div class="player-card-bottom">
+              <span class="knight-count"><span class="knight-icon" aria-hidden="true">♞</span> KNIGHTS <b id="greenKnights">02</b></span>
+              <span class="style-tag">REACTIVE <i>⌁</i></span>
+            </div>
+            <div class="player-accent" aria-hidden="true"></div>
+          </article>
+        </aside>
+
+        <section class="board-panel" aria-labelledby="board-heading">
+          <div class="board-panel-head">
+            <div>
+              <p class="micro-label">LIVE TACTICAL GRID <span>·</span> 8 × 8</p>
+              <h2 id="board-heading">Encrypted board</h2>
+            </div>
+            <div class="turn-badge" id="turnBadge"><i></i><span id="turnText">GREEN RESPONSE WINDOW</span></div>
+          </div>
+
+          <div class="board-frame">
+            <div class="board-coordinates board-coordinates-left" aria-hidden="true">
+              <span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span>
+            </div>
+            <div class="board-grid" id="chessboard" role="grid" aria-label="Chess board. Green moves next." aria-describedby="boardHelp"></div>
+            <div class="board-coordinates board-coordinates-bottom" aria-hidden="true">
+              <span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span>
+            </div>
+          </div>
+          <p id="boardHelp" class="sr-only">Select a green piece to see its available moves. Select a highlighted square to move. Press space to compile the suggested defense.</p>
+          <div class="board-footer">
+            <span class="move-trace"><i class="trace-green"></i> e5 <b>→</b> <i class="trace-red"></i> Nd3</span>
+            <span class="orientation-label">RED CORE <b>／</b> VIEW</span>
+          </div>
+        </section>
+
+        <aside class="intel-rail" aria-label="Match telemetry and move log">
+          <article class="intel-card key-card">
+            <div class="card-heading">
+              <div>
+                <p class="micro-label">ROOT ACCESS <span>／</span> OBJECTIVE</p>
+                <h2>The last key</h2>
+              </div>
+              <span class="lock-icon" aria-label="Locked"></span>
+            </div>
+            <div class="key-status"><span class="lock-dot"></span><b id="keyStatus">LOCKED</b><span>CAMPLATE ROOT CIPHER</span></div>
+            <div class="integrity-label"><span>FIREWALL INTEGRITY</span><b id="integrityValue">81%</b></div>
+            <div class="integrity-track"><span id="integrityBar"></span></div>
+            <div class="key-foot"><span>BANDWIDTH CONTROL</span><b>CONTESTED</b></div>
+          </article>
+
+          <article class="intel-card log-card">
+            <div class="card-heading log-heading">
+              <div>
+                <p class="micro-label">RECENT PACKETS <span>／</span> LIVE FEED</p>
+                <h2>Move log</h2>
+              </div>
+              <span class="feed-pulse"><i></i> LIVE</span>
+            </div>
+            <ol class="move-log" id="moveLog" aria-live="polite"></ol>
+            <div class="log-empty" id="logEmpty" hidden>Awaiting the next handshake…</div>
+          </article>
+
+          <article class="intel-card scan-card">
+            <div class="scan-topline"><span class="micro-label">COUNTERMEASURE</span><span class="scan-mark">◎</span></div>
+            <p class="scan-title" id="scanTitle">Defense route compiled.</p>
+            <p class="scan-copy" id="scanCopy">A central knight route is ready. Choose your move or send the suggested response.</p>
+            <div class="suggested-route"><span>OPTIMAL ROUTE</span><b id="suggestedMove">Nf6</b><i>→</i></div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="command-bar" aria-label="Move controls">
+        <div class="command-intro">
+          <span class="command-icon" aria-hidden="true">⌘</span>
+          <div><span class="micro-label">NEO_CODER // INPUT</span><strong id="commandStatus">Your move. The firewall is holding.</strong></div>
+        </div>
+        <p class="command-hint"><span class="hint-dot"></span><span id="selectionHint">Select a green packet on the board, or compile the suggested defense.</span></p>
+        <button class="compile-button" id="compileButton" type="button">
+          <span class="compile-label" id="compileLabel">COMPILE DEFENSE</span>
+          <kbd>SPACE</kbd>
+          <span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+      </section>
+
+      <footer class="footer">
+        <span>CYBER-CHESS <i>／</i> LOCAL SIMULATION</span>
+        <span>NO PHYSICAL WORLD DETECTED <i class="footer-dot"></i></span>
+        <button type="button" id="resetButton">REBOOT SESSION <span aria-hidden="true">↻</span></button>
+      </footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
